@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Yasin Auwal - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #1a2a6c;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #1a2a6c;
+            border-bottom: 2px solid #fdbb2d;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #b21f1f;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.8rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+        
+        .info-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a2a6c;
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .interest {
+            background: #e8f4fc;
+            padding: 0.8rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .spiderman {
+            color: #e23636;
+            font-weight: bold;
+        }
+        
+        .porsche {
+            color: #d71e1e;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        .email-link {
+            color: #1a2a6c;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .live-preview {
+            display: block;
+            text-align: center;
+            background: #1a2a6c;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 30px auto;
+            width: 250px;
+            transition: all 0.3s;
+        }
+        
+        .live-preview:hover {
+            background: #fdbb2d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-icons a {
+            color: #1a2a6c;
+            font-size: 1.8rem;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #fdbb2d;
+            transform: translateY(-3px);
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            display: block;
+            border: 5px solid #fdbb2d;
+        }
+        
+        .dream-car {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-placeholder">
+                <i class="fas fa-user-circle profile-img" style="font-size: 100px; color: #1a2a6c;"></i>
+            </div>
+            <h1>Muhammad Yasin Auwal</h1>
+            <p class="tagline">Software Engineering Student | Trader | Future Porsche Owner</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:moohill109@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="left-column">
+                <section class="card">
+                    <h2>Basic Information</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h3><i class="fas fa-graduation-cap"></i> Class Level</h3>
+                            <p>Level 200</p>
+                        </div>
+                        <div class="info-item">
+                            <h3><i class="fas fa-code"></i> Department</h3>
+                            <p>Software Engineering</p>
+                        </div>
+                        <div class="info-item">
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
+                            <p><a href="mailto:moohill109@gmail.com" class="email-link">moohill109@gmail.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="card">
+                    <h2>My Interests</h2>
+                    <div class="interests">
+                        <div class="interest"><i class="fas fa-laptop-code"></i> Coding</div>
+                        <div class="interest"><i class="fas fa-chart-line"></i> Trading</div>
+                        <div class="interest"><i class="fas fa-spider"></i> Spider-Man</div>
+                        <div class="interest"><i class="fas fa-car"></i> Cars</div>
+                        <div class="interest"><i class="fas fa-mobile-alt"></i> Technology</div>
+                        <div class="interest"><i class="fas fa-gamepad"></i> Gaming</div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="right-column">
+                <section class="card">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Muhammad Yasin Auwal, a Level 200 Software Engineering student with a passion for technology and trading.</p>
+                    <p>I'm a huge fan of <span class="spiderman">Spider-Man</span> - I admire the character's sense of responsibility, perseverance, and the idea that "with great power comes great responsibility".</p>
+                    <p>When I'm not studying or coding, you can find me analyzing the markets as I'm an active trader. I enjoy the challenge of predicting market movements and making informed decisions.</p>
+                    <p class="dream-car">My dream car is a <span class="porsche">Porsche GT3</span>, and I'm working hard to make that dream a reality in the future, in shaa Allah.</p>
+                </section>
+                
+                <section class="card">
+                    <h2>My Goals</h2>
+                    <ul style="list-style-position: inside; line-height: 2;">
+                        <li>Complete my Software Engineering degree with excellent grades</li>
+                        <li>Become a successful full-stack developer</li>
+                        <li>Grow my trading portfolio consistently</li>
+                        <li>Start my own tech startup</li>
+                        <li>Own a Porsche GT3 (in shaa Allah)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <a href="#" class="live-preview" id="livePreview">
+            <i class="fas fa-eye"></i> View Live Preview
+        </a>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Muhammad Yasin Auwal. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: #b21f1f;"></i> by Muhammad Yasin Auwal</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript to show alert when live preview link is clicked
+        document.getElementById('livePreview').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('To view this portfolio live, you have two options:\n\n1. Save this file with .html extension and open it in a browser\n2. For online hosting, use GitHub Pages, Netlify, or Vercel\n\nCheck the code comments for more details!');
+        });
+        
+        // Simple animation for interests
+        const interests = document.querySelectorAll('.interest');
+        interests.forEach(interest => {
+            interest.addEventListener('mouseover', () => {
+                interest.style.transform = 'scale(1.05)';
+                interest.style.transition = 'transform 0.3s';
+            });
+            
+            interest.addEventListener('mouseout', () => {
+                interest.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
